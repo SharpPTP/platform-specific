@@ -4,7 +4,7 @@
 
 | Package Name  | Release (NuGet)                                                                                     |
 | ------------- | --------------------------------------------------------------------------------------------------- |
-| **PlatformSpecific** | [![NuGet](https://img.shields.io/nuget/v/PlatformSpecific.svg)](https://www.nuget.org/packages/PlatformSpecific/) |
+| **PlatformSpecific.MSTest** | [![NuGet](https://img.shields.io/nuget/v/PlatformSpecific.MSTest.svg)](https://www.nuget.org/packages/PlatformSpecific.MSTest/) |
 
 ### Examples
 

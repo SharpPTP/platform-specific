@@ -13,20 +13,20 @@
 
 ```csharp
 [PlatformSpecificTestMethod(Platform.Windows)]
-public void TestMethod()
+public void TestMethod() {}
 
 [PlatformSpecificDataTestMethod(Platform.Linux)]
 [DataRow(string.Empty)]
-public void DataTestMethod(string value)
+public void DataTestMethod(string value) {}
 ```
 
 #### XUnit
 
 ```csharp
 [PlatformSpecificFact(Platform.Windows)]
-public void TestMethod()
+public void TestMethod() {}
 
 [PlatformSpecificTheory(Platform.Linux)]
 [InlineData(string.Empty)]
-public void DataTestMethod(string value)
+public void DataTestMethod(string value) {}
 ```

@@ -2,7 +2,6 @@
 {
 	using Microsoft.VisualStudio.TestTools.UnitTesting;
 	using System;
-	using System.Runtime.InteropServices;
 
 	/// <summary>
 	/// Attribute that is applied to a method to indicate that it should be run
@@ -25,7 +24,7 @@
 		/// <inheritdoc />
 		public override TestResult[] Execute(ITestMethod testMethod)
 		{
-			if (IsOSPlatform(_platform))
+			if (_platform.IsOSPlatform())
 			{
 				return base.Execute(testMethod);
 			}
@@ -40,33 +39,6 @@
 			{
 				result,
 			};
-		}
-
-		private static bool IsOSPlatform(Platform platform)
-		{
-			if (platform == Platform.Unknown)
-			{
-				throw new PlatformNotSupportedException($"Unknown platform specified.");
-			}
-
-			bool shouldRun = false;
-
-			if (platform.HasFlag(Platform.Linux) && !shouldRun)
-			{
-				shouldRun = RuntimeInformation.IsOSPlatform(OSPlatform.Linux);
-			}
-
-			if (platform.HasFlag(Platform.OSX) && !shouldRun)
-			{
-				shouldRun = RuntimeInformation.IsOSPlatform(OSPlatform.OSX);
-			}
-
-			if (platform.HasFlag(Platform.Windows) && !shouldRun)
-			{
-				shouldRun = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
-			}
-
-			return shouldRun;
 		}
 	}
 }

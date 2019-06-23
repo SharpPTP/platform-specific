@@ -1,4 +1,4 @@
-﻿namespace PlatformSpecific.MSTest
+﻿namespace PlatformSpecific
 {
 	using System;
 	using System.Runtime.InteropServices;

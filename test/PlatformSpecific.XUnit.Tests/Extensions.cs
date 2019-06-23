@@ -1,8 +1,8 @@
-﻿namespace PlatformSpecific.MSTest.Tests
+﻿namespace PlatformSpecific.XUnit.Tests
 {
-	using Microsoft.VisualStudio.TestTools.UnitTesting;
 	using System.Collections.Generic;
 	using System.Runtime.InteropServices;
+	using Xunit;
 
 	internal static class Extensions
 	{
@@ -17,7 +17,7 @@
 				result |= RuntimeInformation.IsOSPlatform(platform);
 			}
 
-			Assert.IsTrue(result, "Invalid OS platform.");
+			Assert.True(result, "Invalid OS platform.");
 		}
 	}
 }

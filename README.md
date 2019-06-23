@@ -2,15 +2,15 @@
 
 ### Build Status
 
-|               |                                                                   Build Status                                                                   |
-| ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------: |
-| **Linux** | [![Build Status](https://travis-ci.org/SharpPTP/platform-specific.svg?branch=master)](https://travis-ci.org/SharpPTP/platform-specific)                          |
-| **Windows**   | [![Build status](https://ci.appveyor.com/api/projects/status/qhb351ea1jih8yw8?svg=true)](https://ci.appveyor.com/project/petarpetrovt/platform-specific) |
+|             | Build Status |
+| ----------- | ------------ |
+| **Linux**   | [![Build Status](https://travis-ci.org/SharpPTP/platform-specific.svg?branch=master)](https://travis-ci.org/SharpPTP/platform-specific) |
+| **Windows** | [![Build status](https://ci.appveyor.com/api/projects/status/qhb351ea1jih8yw8?svg=true)](https://ci.appveyor.com/project/petarpetrovt/platform-specific) |
 
 ### Installation
 
-| Package Name  | Release (NuGet)                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------- |
+|                      | NuGet |
+| -------------------- | ----- |
 | **PlatformSpecific** | [![NuGet](https://img.shields.io/nuget/v/PlatformSpecific.svg)](https://www.nuget.org/packages/PlatformSpecific/) |
 | **PlatformSpecific.MSTest** | [![NuGet](https://img.shields.io/nuget/v/PlatformSpecific.MSTest.svg)](https://www.nuget.org/packages/PlatformSpecific.MSTest/) |
 | **PlatformSpecific.XUnit** | [![NuGet](https://img.shields.io/nuget/v/PlatformSpecific.XUnit.svg)](https://www.nuget.org/packages/PlatformSpecific.XUnit/) |

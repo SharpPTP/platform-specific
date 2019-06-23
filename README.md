@@ -5,7 +5,7 @@
 |               |                                                                   Build Status                                                                   |
 | ------------- | :----------------------------------------------------------------------------------------------------------------------------------------------: |
 | **Linux/Mac** | [![Build Status](https://travis-ci.org/SharpPTP/platform-specific.svg?branch=master)](https://travis-ci.org/SharpPTP/platform-specific)                          |
-| **Windows**   | [![Build Status](https://ci.appveyor.com/api/projects/status/github/platform-specific?svg=true)](https://ci.appveyor.com/project/petarpetrovt/platform-specific) |
+| **Windows**   | [![Build status](https://ci.appveyor.com/api/projects/status/qhb351ea1jih8yw8?svg=true)](https://ci.appveyor.com/project/petarpetrovt/platform-specific) |
 
 ### Installation
 

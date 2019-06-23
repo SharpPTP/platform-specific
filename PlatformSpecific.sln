@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
+		.travis.yml = .travis.yml
+		appveyor.yml = appveyor.yml
 		Deploy.ps1 = Deploy.ps1
 		global.json = global.json
 		LICENSE = LICENSE
@@ -25,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformSpecific.MSTest.Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformSpecific.XUnit", "src\PlatformSpecific.XUnit\PlatformSpecific.XUnit.csproj", "{3FF1CB6A-8C30-4FA5-AE54-3B366C7E670B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformSpecific", "src\PlatformSpecific\PlatformSpecific.csproj", "{C2742C57-D72D-4C2A-AEDB-E8BB34745776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformSpecific", "src\PlatformSpecific\PlatformSpecific.csproj", "{C2742C57-D72D-4C2A-AEDB-E8BB34745776}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlatformSpecific.XUnit.Tests", "test\PlatformSpecific.XUnit.Tests\PlatformSpecific.XUnit.Tests.csproj", "{5917985B-2222-40A5-AA37-3846EB8F5CF2}"
 EndProject

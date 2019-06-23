@@ -7,7 +7,9 @@
 		<AssemblyName>PlatformSpecific</AssemblyName>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<Version>1.0.0</Version>
-		<IsPackable>false</IsPackable>
+		<IsPackable>true</IsPackable>
+		<PackageId>PlatformSpecific</PackageId>
+		<PackageTags>PlatformSpecific;Attribute;Platform</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/SharpPTP/platform-specific</RepositoryUrl>
 		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>

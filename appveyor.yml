@@ -1,24 +1,18 @@
 version: 1.0.0.{build}
 image: Visual Studio 2017
-
 branches:
   only:
-  - master
-  
- clone_depth: 1
- 
+    - master
 nuget:
- disable_publish_on_pr: true
-
+  disable_publish_on_pr: true
 test: off
-
 # prevent the double build when a branch has an active PR
 skip_branch_with_pr: true
-
 init:
   # Good practise, because Windows line endings are different from Unix/Linux ones
   - cmd: git config --global core.autocrlf true
-   # .NET Core SDK binaries
+install:
+  # .NET Core SDK binaries
   - ps: $urlCurrent = "https://download.visualstudio.microsoft.com/download/pr/4d8d4bfe-00d8-4347-9786-7027117694bb/86385dc7a0d79d5d14c45bee3038a1c4/dotnet-sdk-2.2.300-win-x64.zip"
   - ps: $env:DOTNET_INSTALL_DIR = "$pwd\.dotnetsdk"
   - ps: mkdir $env:DOTNET_INSTALL_DIR -Force | Out-Null
@@ -26,12 +20,7 @@ init:
   - ps: (New-Object System.Net.WebClient).DownloadFile($urlCurrent, $tempFileCurrent)
   - ps: Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory($tempFileCurrent, $env:DOTNET_INSTALL_DIR)
   - ps: $env:Path = "$env:DOTNET_INSTALL_DIR;$env:Path"
-  
-install:
-  # Install repo specific stuff here
-  
 before_build:
   - cmd: dotnet --version
-
 build_script:
-- cmd: deploy.cmd
+  - cmd: deploy.cmd

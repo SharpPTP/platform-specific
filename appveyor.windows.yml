@@ -23,4 +23,5 @@ install:
 before_build:
   - ps: dotnet --version
 build_script:
-  - ps: .\Deploy.ps1
+  - ps: dotnet test test/PlatformSpecific.MSTest.Tests/PlatformSpecific.MSTest.Tests.csproj -c Release
+  - ps: dotnet test test/PlatformSpecific.XUnit.Tests/PlatformSpecific.XUnit.Tests.csproj -c Release

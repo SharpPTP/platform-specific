@@ -19,4 +19,5 @@ install:
 before_build:
   - sh: dotnet --version
 build_script:
-  - sh: bash ./Deploy.sh
+  - sh: dotnet test test/PlatformSpecific.MSTest.Tests/PlatformSpecific.MSTest.Tests.csproj -c Release
+  - sh: dotnet test test/PlatformSpecific.XUnit.Tests/PlatformSpecific.XUnit.Tests.csproj -c Release

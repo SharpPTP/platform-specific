@@ -1,6 +1,5 @@
 version: 1.0.0.{build}
 image:
-  - Visual Studio 2017
   - Ubuntu
 branches:
   only:
@@ -12,7 +11,7 @@ test: off
 skip_branch_with_pr: true
 init:
   # Good practise, because Windows line endings are different from Unix/Linux ones
-  - cmd: git config --global core.autocrlf true
+  - ps: git config --global core.autocrlf true
 install:
   # .NET Core SDK binaries
   - ps: $urlCurrent = "https://download.visualstudio.microsoft.com/download/pr/87955c8d-c571-471a-9d2d-90fd069cf1f2/9fbde37bbe8b156cec97a25b735f9465/dotnet-sdk-3.1.101-win-x64.zip"
@@ -23,6 +22,6 @@ install:
   - ps: Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory($tempFileCurrent, $env:DOTNET_INSTALL_DIR)
   - ps: $env:Path = "$env:DOTNET_INSTALL_DIR;$env:Path"
 before_build:
-  - cmd: dotnet --version
+  - ps: dotnet --version
 build_script:
-  - cmd: deploy.cmd
+  - ps: Deploy.ps1

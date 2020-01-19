@@ -17,17 +17,17 @@
 		/// <summary>
 		/// Linux
 		/// </summary>
-		Linux = 1,
+		Linux = 1 << 0,
 
 		/// <summary>
 		/// OSX
 		/// </summary>
-		OSX = 2,
+		OSX = 1 << 1,
 
 		/// <summary>
 		/// Windows
 		/// </summary>
-		Windows = 4,
+		Windows = 1 << 2,
 
 		/// <summary>
 		/// Unix (Linux and OSX)

@@ -1,6 +1,6 @@
 @echo Off
 
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '.\deploy.ps1'"
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& '.\Deploy.ps1'"
 
 if not "%errorlevel%"=="0" goto failure
 

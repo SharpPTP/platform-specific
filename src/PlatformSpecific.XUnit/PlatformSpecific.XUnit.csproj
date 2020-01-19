@@ -2,28 +2,11 @@
 
 	<PropertyGroup>
 		<Description>XUnit extension library; written in C#</Description>
-		<Authors>Petar Petrov and contributors</Authors>
 		<AssemblyTitle>PlatformSpecific.XUnit</AssemblyTitle>
 		<AssemblyName>PlatformSpecific.XUnit</AssemblyName>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<Version>1.0.1</Version>
-		<IsPackable>true</IsPackable>
 		<PackageId>PlatformSpecific.XUnit</PackageId>
 		<PackageTags>PlatformSpecific;XUnit;Attribute;TestMethod;DataTestMethod</PackageTags>
 		<PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/SharpPTP/platform-specific</RepositoryUrl>
-		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-		<GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
-		<GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
-		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-		<GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-		<GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
-		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>

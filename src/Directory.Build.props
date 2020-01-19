@@ -1,0 +1,17 @@
+﻿<Project>
+
+	<Import Project="$(MSBuildThisFileDirectory)..\Directory.Build.props" />
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<IsPackable>true</IsPackable>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Nullable>enable</Nullable>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="..\Nullable.cs" Link="Nullable.cs" />
+	</ItemGroup>
+
+</Project>

@@ -1,14 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netcoreapp2.2</TargetFramework>
 		<AssemblyTitle>PlatformSpecific.XUnit.Tests</AssemblyTitle>
 		<AssemblyName>PlatformSpecific.XUnit.Tests</AssemblyName>
-		<Authors>Petar Petrov and contributors</Authors>
-		<IsPackable>false</IsPackable>
-		<RepositoryType>git</RepositoryType>
-		<RepositoryUrl>https://github.com/SharpPTP/platform-specific</RepositoryUrl>
-		<LangVersion>latest</LangVersion>
 	</PropertyGroup>
 
 	<ItemGroup>

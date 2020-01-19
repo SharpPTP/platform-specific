@@ -15,7 +15,7 @@
 		/// <summary>
 		/// Gets the skip message.
 		/// </summary>
-		public new string Skip { get; protected set; }
+		public new string? Skip { get; protected set; }
 
 		/// <summary>
 		/// Creates a new instance of <see cref="PlatformSpecificFactAttribute"/>.

@@ -23,4 +23,4 @@ install:
 before_build:
   - ps: dotnet --version
 build_script:
-  - ps: Deploy.ps1
+  - ps: .\Deploy.ps1

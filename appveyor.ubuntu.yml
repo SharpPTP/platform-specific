@@ -19,4 +19,4 @@ install:
 before_build:
   - sh: dotnet --version
 build_script:
-  - sh: Deploy.sh
+  - sh: bash ./Deploy.sh

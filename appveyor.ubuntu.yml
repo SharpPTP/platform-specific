@@ -12,10 +12,10 @@ install:
   # .NET Core SDK binaries
   - sh: wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
   - sh: sudo dpkg -i packages-microsoft-prod.deb
-  - sh: sudo apt-get update
-  - sh: sudo apt-get install apt-transport-https
-  - sh: sudo apt-get update
-  - sh: sudo apt-get install dotnet-sdk-3.1
+  - sh: sudo apt-get --assume-yes update
+  - sh: sudo apt-get --assume-yes install apt-transport-https
+  - sh: sudo apt-get --assume-yes update
+  - sh: sudo apt-get --assume-yes install dotnet-sdk-3.1
 before_build:
   - sh: dotnet --version
 build_script:
